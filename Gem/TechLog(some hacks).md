@@ -615,5 +615,11 @@ let pro1 = new Promise(resolve=>{return}) //pro1=>pending
 You can think of a reducer as an event listener which handles events based on the received action (event) type.
  ref: [redux core concept snippet ](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow#reducers)
 
- ### 数据驱动的成分进度条
- 用css flex属性即可, flex无单位单值表示该元素分配的flex容器的剩余空间
+### 数据驱动的成分进度条
+用css flex属性即可, flex无单位单值表示该元素分配的flex容器的剩余空间
+
+### 基于flex的百分比布局
+1. div1: flex:1
+2. div2: flex:1
+3. div3: flex:1
+这三个要想各占1/3 必须额外增加一个属性: height或width(取决于flex-direction): 0px, 或者min-height/width: 0px
